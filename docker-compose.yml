@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   redis:
-    image: redis:5.0.4
+    image: redis:7.0.4
     ports:
       - "6379:6379"
 
@@ -15,5 +15,5 @@ services:
     environment:
       TELEGRAM_KEY: "${TELEGRAM_KEY}"
       QUESTION_DB_PATH: "qna/questions.txt"
-      REDIS_ADDR: "redis:6379"
+      REDIS_ADDR: "redis-16118.c257.us-east-1-3.ec2.cloud.redislabs.com:16118"
 
